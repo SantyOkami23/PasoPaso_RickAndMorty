@@ -1,15 +1,19 @@
 <template>
   <div>RICK AND MORTY</div>
-  <ListCharacters />
+  <FilterByStatus/>
+  <ListCharacters/>
+  
 </template>
 
 <script>
 
 import ListCharacters from '@/components/ListCharacters.vue'
+import FilterByStatus from '@/components/FilterByStatus.vue'
 export default {
   name: 'App',
   components: {
-    ListCharacters
+    ListCharacters,
+    FilterByStatus
    
   }
 }
@@ -31,7 +35,6 @@ export default {
 }
 body {
   background-color: var(--background-body);
-  color: var(--text-white);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 {
